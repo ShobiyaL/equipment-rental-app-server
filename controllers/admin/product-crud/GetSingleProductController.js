@@ -1,4 +1,4 @@
-const Product = require('../../../models/Product');
+const Product = require('../../../models/product');
 
 const GetSingleProductController = async(req,res)=>{
     const { productid }= req.params;

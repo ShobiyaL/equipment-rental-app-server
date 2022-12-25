@@ -1,5 +1,5 @@
 
-const Product = require('../../../models/Product');
+const Product = require('../../../models/product');
 
 const DeleteProductController = async(req,res)=>{
     const {productid}=req.params;

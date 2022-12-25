@@ -1,4 +1,4 @@
-const User = require("../../models/userInfo");
+const User = require("../../models/user");
 
 const GetProfileController = async (req, res) => {
   const { email, role } = req.userObj;
