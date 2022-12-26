@@ -7,7 +7,7 @@ const GetProfileController = async (req, res) => {
       return res.status(400).json({ message: "Resource denied", type: "error" });
     }
     const userFound = await User.findOne({ email }).select(
-      "name email"
+      "username email"
     );
     if (!userFound) {
       return res.status(400).json({ message: "No user Found", type: "error" });
