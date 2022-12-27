@@ -5,8 +5,8 @@ const router = express.Router();
 const GetOrdersController = require("../controllers/private/GetOrdersController");
 const GetProfileController = require("../controllers/private/GetProfileController");
 
-router.get("/GetProfile", GetProfileController);
+router.get("/getProfile", GetProfileController);
 
-router.get("/GetOrders", GetOrdersController);
+router.get("/getOrders", GetOrdersController);
 
 module.exports = router;
