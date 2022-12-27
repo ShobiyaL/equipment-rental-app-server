@@ -2,6 +2,7 @@ const User = require("../../models/user");
 
 const GetProfileController = async (req, res) => {
   const { email, role } = req.userObj;
+  // console.log(email);
   try {
     if (role === "admin") {
       return res.status(400).json({ message: "Resource denied", type: "error" });
