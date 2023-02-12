@@ -4,12 +4,13 @@ const {createTokenFunc} = require('../../utils/token')
 
 const SignIncontroller = async(req,res)=>{
    const {email,password} = req.body;
+//    console.log(email)
    try {
     if(!email || !password){
         return res.status(403).json({message:"Fields should not be empty",type:"error"})
     }
     const user = await User.findOne({email})
-    // console.log(user)
+    //  console.log(user)
     if(!user){
         return res
         .status(401)
